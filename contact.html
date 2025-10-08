@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - LeafYGamerZX</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --card: #1a1a1a;
+      --text: #ffffff;
+      --accent: #00ff88;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: var(--card);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 60px;
+      padding: 30px;
+    }
+
+    main img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px var(--accent);
+    }
+
+    main h1 {
+      font-size: 2em;
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    main p {
+      max-width: 600px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #cccccc;
+      margin-bottom: 25px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background: var(--accent);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .contact-links a:hover {
+      background: #00ff99;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 20px;
+      background: var(--card);
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="leafy.jpg" alt="LeafYGamerZX Logo" />
+      <h2>LeafYGamerZX</h2>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <img src="leafy.jpg" alt="LeafYGamerZX Photo" />
+    <h1>Contact Me</h1>
+    <p>Hey there! I’m <strong>LeafYGamerZX</strong> — a passionate gamer and creator.  
+    If you’d like to collaborate, share feedback, or just say hi — feel free to reach out below!</p>
+
+    <div class="contact-links">
+      <a href="mailto:leafytheytgamerzx@gmail.com">📧 Email Me</a>
+      <a href="https://discord.gg/rrfKztTg" target="_blank">💬 Join Discord</a>
+      <a href="https://www.youtube.com/@LeafYGamerZX1969" target="_blank">▶️ My YouTube</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 LeafYGamerZX | Designed with 💚 LeafY Theme
+  </footer>
+</body>
+</html>
