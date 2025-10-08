@@ -31,6 +31,31 @@
       margin-left: 15px;
       color: #00ff88;
       font-size: 28px;
+      vertical-align: middle;
+    }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+      margin-top: 15px;
+    }
+
+    .nav-btn {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 25px;
+      color: #00ff88;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #00ff88;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      font-size: 16px;
+    }
+
+    .nav-btn:hover {
+      background-color: #00ff88;
+      color: #000;
+      transform: scale(1.1);
     }
 
     .contact-container {
@@ -86,6 +111,13 @@
   <header>
     <img src="leafy.jpg" alt="LeafYGamerZX Logo" />
     <h1>LeafYGamerZX</h1>
+
+    <!-- Navigation Buttons -->
+    <nav class="nav-buttons">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+    </nav>
   </header>
 
   <div class="contact-container">
