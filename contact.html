@@ -37,11 +37,14 @@
     /* Navigation Buttons */
     .nav-buttons {
       margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .nav-btn {
       display: inline-block;
-      margin: 0 10px;
       padding: 10px 25px;
       color: #00ff88;
       text-decoration: none;
@@ -50,6 +53,7 @@
       border-radius: 30px;
       transition: all 0.3s ease;
       font-size: 16px;
+      text-align: center;
     }
 
     .nav-btn:hover {
@@ -60,7 +64,7 @@
 
     .contact-container {
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
 
     .contact-container h2 {
@@ -71,13 +75,14 @@
 
     .contact-info {
       margin-top: 30px;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.8;
     }
 
     .contact-info a {
       color: #00ff88;
       text-decoration: none;
+      word-break: break-word;
     }
 
     .contact-info a:hover {
@@ -91,6 +96,7 @@
     .contact-image img {
       width: 180px;
       height: 180px;
+      max-width: 80%;
       border-radius: 50%;
       border: 3px solid #00ff88;
       object-fit: cover;
@@ -105,6 +111,37 @@
       color: #aaa;
       font-size: 14px;
     }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      header h1 {
+        display: block;
+        margin-top: 10px;
+        font-size: 24px;
+      }
+      .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav-btn {
+        width: 60%;
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-container h2 {
+        font-size: 28px;
+      }
+      .contact-info {
+        font-size: 16px;
+      }
+      .nav-btn {
+        width: 80%;
+        font-size: 14px;
+        padding: 8px 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -116,7 +153,7 @@
     <nav class="nav-buttons">
       <a href="index.html" class="nav-btn">Home</a>
       <a href="about.html" class="nav-btn">About</a>
-
+      <a href="contact.html" class="nav-btn">Contact</a>
     </nav>
   </header>
 
@@ -126,7 +163,7 @@
 
     <div class="contact-info">
       📧 Email: <a href="mailto:leafygamerzx@gmail.com">leafygamerzx@gmail.com</a><br>
-      💬 Discord: <a href="https://discord.gg/NamHwg3J" target="_blank">Join My Discord</a><br>
+      💬 Discord: <a href="https://discord.gg/rrfKztTg" target="_blank">Join My Discord</a><br>
       ▶️ YouTube: <a href="https://www.youtube.com/@LeafYGamerZX1969" target="_blank">@LeafYGamerZX1969</a>
     </div>
 
