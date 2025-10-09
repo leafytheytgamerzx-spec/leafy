@@ -40,7 +40,7 @@
     .nav {
       display: flex;
       align-items: center;
-      justify: space-between;
+      justify-content: space-between;
       padding: 16px 8%;
     }
     .brand {
@@ -64,6 +64,7 @@
       margin-left: 16px;
       font-weight: 600;
       color: var(--muted);
+      transition: 0.3s;
     }
     nav a:hover {
       color: var(--brand-2);
@@ -180,18 +181,20 @@
         <span>LeafYGamerZX</span>
       </a>
       <nav>
-   <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+              <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-      </nav
-    ></div>
+      </nav>
+    </div>
   </header>
 
   <main id="home" class="hero">
     <div class="hero-text">
       <span class="tag">🎮 Gamer • 🎥 Creator • 🌿 LeafY Vibes</span>
       <h1 class="title">Hey, I’m LeafYGamerZX</h1>
-      <p class="sub">Minecraft lover, challenge grinder, and fun content maker! Watch my latest videos, join my Discord, and be part of the LeafY family.</p>
+      <p class="sub">
+        Minecraft lover, challenge grinder, and fun content maker! Watch my latest videos,
+        join my Discord, and be part of the LeafY family.
+      </p>
       <div class="cta">
         <a class="btn primary" href="#videos">Watch Latest</a>
         <a href="https://discord.gg/rrfKztTg" target="_blank" class="btn">Join Discord</a>
@@ -199,7 +202,7 @@
       </div>
     </div>
     <div class="hero-logo">
-      <img src="leafy.jpg" alt="LeafYGamerZX Logo">
+      <img src="leafy.jpg" alt="LeafYGamerZX Logo" />
     </div>
   </main>
 
@@ -215,7 +218,6 @@
   </footer>
 
   <script>
-    document.getElementAsHtml = new Date().getFullYear();
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
